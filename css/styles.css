@@ -110,6 +110,11 @@ img {
 }
 
 /* NAVBAR */
+header {
+  position: sticky;
+  top: 0px;
+}
+
 .logo {
   font-size: 1.6rem;
   color: var(--black);
@@ -136,18 +141,6 @@ img {
   align-items: center;
   padding: 25px 50px;
   background-color: var(--white);
-}
-
-.divider {
-  height: 1px;
-}
-
-header .divider {
-  background-color: var(--another-grey);
-}
-
-footer .divider {
-  background-color: var(--dark-grey);
 }
 
 @media (max-width: 1000px) {
@@ -179,6 +172,20 @@ footer .divider {
   .menu-button {
     display: block;
   }  
+}
+
+/* DIVIDERS */
+
+.divider {
+  height: 1px;
+}
+
+header .divider {
+  background-color: var(--another-grey);
+}
+
+footer .divider {
+  background-color: var(--dark-grey);
 }
 
 /* CAROUSEL */
