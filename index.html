@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Website - Oge</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <header>
+    <!-- CONTENT -->
+    <div class="header-content">
+      <h1 class="logo"><a href="index.html">Callum Hayes</a></h1>
+      <button class="button menu-button" id="menuButton">Menu</button>
+      <nav class="links" id="navLinks">
+        <ul>
+          <li><a href="pages/projects.html">Projects</a></li>
+          <li><a href="pages/resume.html">Resume</a></li>
+          <li><a href="pages/about.html">About me</a></li>
+        </ul>
+        <a href="#" onclick="event.preventDefault();" class="button white-button">Book a Call</a>
+      </nav>
+    </div>
+    <!-- DIVIDER -->
+    <div class="divider"></div>
+  </header>
+
+  <main>
+    <section class="one">
+      <!-- CONTENT -->
+      <div class="content">
+        <img class="profile-picture" src="images/profiles/profile-1.png" alt="Site Owner's Image - Callum Hayes">
+        <p class="regular-heading">I'm Callum Hayes, a UX/UI designer specialising in creating sleek, user-friendly mobile apps.</p>
+        <div class="icons white-icons">
+          <a class="icon">
+            <img src="images/icons/dribbble.png" alt="Dribbble Icon">
+          </a>
+          <a class="icon">
+            <img src="images/icons/linkedin.png" alt="Linkedin Icon">
+          </a>
+          <a class="icon">
+            <img src="images/icons/behance.png" alt="Behance Icon">
+          </a>
+          <a class="icon">
+            <img src="images/icons/x.png" alt="X Icon" style="width: 12px; height: 12px;"> <!-- Inline CSS was used because this icon is bigger than the other icons. -->
+          </a>
+        </div>
+      </div>
+      <!-- CAROUSEL -->
+      <div class="carousel">
+        <img src="images/projects/project-1.png" alt="Project Image" draggable="false">
+        <img src="images/projects/project-2.png" alt="Project Image" draggable="false">
+        <img src="images/projects/project-3.png" alt="Project Image" draggable="false">
+      </div>
+    </section>
+
+    <section class="two">
+      <!-- CONTENT -->
+      <div class="content">
+        <h2 class="medium-heading">Selected projects</h2>
+        <p class="paragraph">Explore my selected projects, showcasing my dedication to innovative and heartfelt design.</p>
+      </div>
+      <!-- PROJECTS -->
+      <div class="projects">
+        <div class="project">
+          <img src="images/projects/project-3.png" alt="Project Image">
+          <h3 class="small-heading">Redesign project: fitness tracker App Revamp</h3>
+          <p class="paragraph">Elevating the user experience of a renowned fitness tracker app through a strategic.</p>
+        </div>
+        <div class="project">
+          <img src="images/projects/project-4.png" alt="Project Image">
+          <h3 class="small-heading">Internship project: social dining app design</h3>
+          <p class="paragraph">Designing a mobile app to connect food enthusiasts through shared dining experiences, from concept to prototype.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="three">
+      <!-- CONTENT -->
+      <div class="content">
+        <h2 class="medium-heading">My graduation project</h2>
+        <p class="paragraph">Revolutionizing the educational ecosystem with a mobile app designed to enhance interactive learning and peer collaboration.</p>
+      </div>
+      <!-- IMAGE -->
+      <div class="image">
+        <img src="images/projects/project-5.png" alt="Project Image">
+      </div>
+    </section>
+
+    <section class="four">
+      <!-- CONTENT -->
+      <div class="content">
+        <h2 class="medium-heading">Expert feedback</h2>
+        <p class="paragraph">Read insights and praises from mentors and peers who have guided and witnessed my professional growth.</p>
+      </div>
+      <!-- TESTIMONIALS -->
+      <div class="testimonials carousel">
+        <div class="testimonial">
+          <img src="images/profiles/profile-2.png" alt="Testimonial Profile Image">
+          <figure>
+            <figcaption>
+              <p class="small-heading">Dr. James Anderson</p>
+              <p class="caption">Director of the College of Art and Design</p>
+            </figcaption>
+            <blockquote>
+              <p class="paragraph">"As the director of the college, I have witnessed Callum's remarkable growth as a designer. He has a keen eye for detail and a commendable dedication to his craft, which has set a high standard for his peers. Callum's work is a testament to his potential in the design industry."</p>
+            </blockquote>
+          </figure>
+        </div>
+        <div class="testimonial">
+          <img src="images/profiles/profile-3.png" alt="Testimonial Profile Image">
+          <figure>
+            <figcaption>
+              <p class="small-heading">Elizabeth Thompson</p>
+              <p class="caption">Senior Lecturer in Graphic Design</p>
+            </figcaption>
+            <blockquote>
+              <p class="paragraph">"Callum consistently demonstrated exceptional creativity and a deep understanding of user-centric design principles in my design class. His projects were not only aesthetically pleasing but also showcased practical functionality that exceeded course expectations."</p>
+            </blockquote>
+          </figure>
+        </div>
+        <div class="testimonial">
+          <img src="images/profiles/profile-4.png" alt="Testimonial Profile Image">
+          <figure>
+            <figcaption>
+              <p class="small-heading">Michael Richards</p>
+              <p class="caption">Creative Director & Design Mentor</p>
+            </figcaption>
+            <blockquote>
+              <p class="paragraph">"Callum has an extraordinary talent for translating complex concepts into visually appealing and intuitive designs. Working alongside him as a mentor, I was impressed by his ability to seamlessly integrate feedback and push the boundaries of what's possible in digital design."</p>
+            </blockquote>
+          </figure>
+        </div>
+      </div>
+    </section>
+    
+    <section class="contact">
+      <!-- CONTENT -->
+      <div class="content">
+        <p class="medium-heading">Interested in connecting?</p>
+        <p class="paragraph">Let’s talk projects, collaborations, or anything design!</p>
+      </div>
+      <a href="#" onclick="event.preventDefault();" class="button black-button">Book a Call</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <!-- CONTENT -->
+      <div class="content">
+        <p><a href="index.html">Callum Hayes</a></p>
+        <nav>
+          <ul>
+            <li><a href="pages/projects.html">Projects</a></li>
+            <li><a href="pages/resume.html">Resume</a></li>
+            <li><a href="pages/about.html">About me</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- ICONS -->
+      <div class="icons black-icons" aria-label="Dribbble Icon">
+        <a class="icon">
+          <i class="fa-brands fa-dribbble"></i>
+        </a>
+        <a class="icon" aria-label="Dribbble Icon">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a class="icon" aria-label="Behance Icon">
+          <i class="fa-brands fa-behance"></i>
+        </a>
+        <a class="icon" aria-label="X Icon">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+      </div>
+    </div>
+    <!-- DIVIDER -->
+    <div class="divider"></div>
+    <!-- COPYRIGHT -->
+    <p class="copyright">Copyright 2024 by Callum Hayes</p>
+    
+  </footer>
+  
+  <script src="js/app.js"></script>
+</body>
+</html>
