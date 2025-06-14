@@ -76,6 +76,11 @@ img {
   font-size: 1.8rem;
 }
 
+.medium-paragraph {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
 
 
 /* COMPONENTS */
@@ -470,7 +475,81 @@ footer .divider {
   }
 }
 
+/* PROJECTS PAGE */
+
+/* SECTION ONE */
+.two.projects-page {
+  padding-top: 60px;
+  padding-bottom: 200px;
+}
+
+@media (max-width: 1020px) {
+
+}
+
+/* RESUME PAGE */
+
 /* SECTION FIVE */
+.five {
+  padding: 60px 150px 90px;
+  background-color: var(--white);
+}
+
+.five .content {
+  display: grid;
+  gap: 40px;
+}
+
+.five .content .medium-paragraph {
+  max-width: 700px;
+}
+
+@media (max-width: 1020px) {
+  .five {
+    padding: 60px 30px 45px;
+  }
+}
+
+/* SECTION SIX */ /* bullet point is too big. use li::before to add custom "." also, fix the li and spacing between heading and li */
+.six {
+  padding: 80px 150px 200px;
+  background-color: var(--another-grey);
+  display: grid;
+  gap: 40px;
+}
+
+.six .container {
+  display: grid;
+  gap: 20px;
+}
+
+.six .resume-heading { /* This heading is for the resume page */
+  font-size: 3.2rem;
+  font-weight: 500;
+}
+
+.six ul {
+  padding-left: 15px; /* so that the <li> items align under the heading */
+}
+
+.six li {
+  color: var(--other-grey);
+  line-height: 4.1rem;
+}
+
+.six li::marker {
+    font-size: 0.7em;
+  }
+
+@media (max-width: 1020px) {
+  .six {
+    padding: 40px 30px 100px;
+  }
+}
+
+
+
+/* CONTACT SECTION */
 .contact {
   background-color: var(--dark-grey);
   color: var(--white);
