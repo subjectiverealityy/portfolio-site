@@ -51,7 +51,7 @@ img {
 .medium-heading {
   font-size: 5rem;
   line-height: 1;
-  font-weight: 550;
+  font-weight: 500;
 }
 
 .small-heading {
@@ -94,6 +94,7 @@ img {
   font-size: 1.4rem;
   font-weight: 500;
   width: fit-content;
+  cursor: pointer;
 }
 
 .white-button {
@@ -289,6 +290,106 @@ footer .divider {
   }
 }
 
+/* CONTACT SECTION */
+.contact {
+  background-color: var(--dark-grey);
+  color: var(--white);
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact .content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+@media (max-width: 1020px) {
+  .contact {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 50px 50px 80px;
+  display: grid;
+  gap: 40px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .content {
+  display: flex;
+  gap: 70px;
+}
+
+footer .content p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+footer .content ul {
+  display: flex;
+  gap: 30px;
+}
+
+footer .content li {
+  list-style: none;
+  font-size: 14px;
+  display: inline-block;
+}
+
+footer .icons {
+  display: flex;
+  gap: 20px;
+}
+
+footer .icon > * { /* This targets the child of .icon, <i> */
+  font-size: 1.6rem;
+}
+
+footer .divider {
+  color: var(--dark-grey);
+}
+
+footer .copyright {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4rem;
+  color: var(--grey);
+  text-align: center;
+}
+
+@media (max-width: 1020px) {
+  footer {
+    padding: 50px 30px 80px;
+  }
+
+  footer .icons {
+    gap: 10px;
+  }
+
+  footer .footer-links {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  footer .content {
+    flex-direction: column;
+    gap: 15px
+  }
+}
+
+
 
 /* PAGES */
 
@@ -337,7 +438,6 @@ footer .divider {
 }
 
 /* SECTION TWO */
-
 .two {
   background-color: var(--light-grey);
   padding-top: 100px;
@@ -475,17 +575,21 @@ footer .divider {
   }
 }
 
+
 /* PROJECTS PAGE */
 
-/* SECTION ONE */
+/* ONLY SECTION (REUSED - FROM INDEX.HTML) */
 .two.projects-page {
   padding-top: 60px;
   padding-bottom: 200px;
 }
 
 @media (max-width: 1020px) {
-
+  .two.projects-page {
+  padding-bottom: 100px;
 }
+}
+
 
 /* RESUME PAGE */
 
@@ -510,7 +614,7 @@ footer .divider {
   }
 }
 
-/* SECTION SIX */ /* bullet point is too big. use li::before to add custom "." also, fix the li and spacing between heading and li */
+/* SECTION SIX */
 .six {
   padding: 80px 150px 200px;
   background-color: var(--another-grey);
@@ -548,105 +652,249 @@ footer .divider {
 }
 
 
+/* ABOUT PAGE */
 
-/* CONTACT SECTION */
-.contact {
-  background-color: var(--dark-grey);
-  color: var(--white);
-  padding-top: 100px;
-  padding-bottom: 100px;
+/* SECTION SEVEN */
+.seven {
+  padding: 60px 150px 60px;
+  background-color: var(--white);
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+  gap: 90px;
 }
 
-.contact .content {
+.seven .container {
   display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-@media (max-width: 1020px) {
-  .contact {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-}
-
-/* FOOTER */
-footer {
-  background-color: var(--black);
-  color: var(--white);
-  padding: 50px 50px 80px;
-  display: grid;
   gap: 40px;
 }
 
-.footer-links {
+.seven img {
+  display: cover;
+}
+
+.seven .content {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 28px;
 }
 
-footer .content {
-  display: flex;
-  gap: 70px;
+.seven .about-paragraph {
+  font-weight: 500;
+  font-size: 2.4rem;
 }
 
-footer .content p {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-footer .content ul {
-  display: flex;
-  gap: 30px;
-}
-
-footer .content li {
-  list-style: none;
-  font-size: 14px;
-  display: inline-block;
-}
-
-footer .icons {
-  display: flex;
-  gap: 20px;
-}
-
-footer .icon > * { /* This targets the child of .icon, <i> */
-  font-size: 1.6rem;
-}
-
-footer .divider {
+.seven .paragraph {
   color: var(--dark-grey);
 }
 
-footer .copyright {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.4rem;
-  color: var(--grey);
-  text-align: center;
+@media (max-width: 1020px) { /* reduces the padding on smaller screens */
+  .seven {
+    padding: 60px 30px 60px;
+    gap: 45px;
+  }
 }
 
-@media (max-width: 1020px) {
-  footer {
-    padding: 50px 30px 80px;
-  }
-
-  footer .icons {
-    gap: 10px;
-  }
-
-  footer .footer-links {
+@media (max-width: 850px) {
+  .seven .container {
     flex-direction: column;
+  }
+
+  .seven img {
+    max-width: 500px;
+    align-self: center;
+  }
+}
+
+/* SECTION EIGHT */
+.eight {
+  padding: 100px 100px 50px;
+  background-color: var(--light-grey);
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.eight .content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.eight .interests {
+  display: flex;
+  gap: 10px;
+}
+
+@media (max-width: 1020px) { 
+.eight {
+    padding: 70px 30px 50px;
+  }
+}
+
+/* SECTION NINE */
+.nine {
+  background-color: var(--light-grey);
+  padding: 50px 100px 150px;
+}
+
+.nine .content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* FOR SECTIONS EIGHT AND NINE */
+.two-columns {
+    display: flex;
     gap: 40px;
   }
 
-  footer .content {
-    flex-direction: column;
-    gap: 15px
+@media (max-width: 700px) {
+  .two-columns {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .nine {
+    padding: 25px 30px 75px;
+  }
+}
+
+
+/* PROJECT PAGE (FOR EACH PROJECT) */
+
+/* SECTION TEN */
+.ten {
+  padding: 60px 150px 150px;
+  background-color: var(--white);
+}
+
+.ten .content {
+  display: grid;
+  gap: 40px;
+  width: 100%; /* setting a width so that images (children elements) have a parent with a fixed width */
+}
+
+.ten .content .medium-paragraph {
+  max-width: 700px;
+}
+
+.ten .roles {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.ten .role {
+  display: grid;
+  gap: 10px;
+  padding: 20px;
+  font-size: 1.5rem;
+  flex-grow: 1; /* they will all grow equally to fill the available horizontal space */
+}
+
+.ten .content img.image {
+  width: 100%;
+}
+
+.ten .content .two-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  align-items: stretch; /* this ensures that the images on a row will stretch if necessary to be at the same height as their tallest sibling */
+}
+
+.ten .content .three-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.ten .content .three-images .stretch.image {
+  grid-column: span 2; /* the third image will stretch across both columns */
+}
+
+.ten .stages {
+  display: grid;
+  gap: 32px;
+}
+
+.ten .stage {
+  display: grid;
+  gap: 20px;
+  padding: 0px 50px;
+}
+
+.ten .stage ul {
+  padding-left: 18px; /* so that the <li> items align under the heading */
+}
+
+.ten .stage ul li::marker {
+  font-size: 1.1rem;
+}
+
+@media (max-width: 1020px) {
+  .ten {
+    padding: 60px 30px 45px;
   }
 
+  .ten .stage {
+    padding: 0px;
+  }
+
+  .ten .extra.role {
+    display: none;
+  }
+}
+
+/* SECTION ELEVEN */
+.eleven {
+  background-color: var(--light-grey);
+  padding: 100px 150px 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.eleven .projects {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.eleven .project {
+  display: flex;
+  gap: 28px;
+}
+
+.eleven .project img {
+  border-radius: 10px;
+  max-width: 300px;
+  flex-grow: 1;
+}
+
+.eleven .project-content {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.eleven .project-content p {
+   font-size: 1.5rem;
+   font-weight: 500;
+}
+
+@media (max-width: 1020px) {
+  .eleven {
+    padding: 50px 30px 100px;
+  }
+
+  .eleven .project {
+    flex-direction: column;
+    gap: 14px;
+  }
 }
 
 
