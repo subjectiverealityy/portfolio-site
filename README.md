@@ -8,9 +8,9 @@ The Figma file has only desktop views so I designed the layout for mobile screen
 
 ## Features
 
-Semantic HTML
-Responsiveness (via CSS)
-JavaScript carousel and mobile menu
+- Semantic HTML
+- Responsiveness (via CSS)
+- JavaScript carousel and mobile menu
 
 This is a link to the website - https://subjectiverealityy.github.io/portfolio-site/
 
